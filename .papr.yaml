@@ -1,0 +1,8 @@
+branches:
+  - dev
+
+container:
+  image: registry.fedoraproject.org/fedora:27
+
+tests:
+  - echo hello world
