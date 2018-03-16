@@ -5,4 +5,12 @@ container:
   image: registry.fedoraproject.org/fedora:27
 
 tests:
-  - echo hello world
+  - echo hello world > foo
+  - mkdir bar baz
+  - echo hello world > bar/bar
+  - echo hello world > baz/baz
+
+artifacts:
+  - foo
+  - bar
+  - baz/
