@@ -5,12 +5,12 @@ container:
   image: registry.fedoraproject.org/fedora:27
 
 tests:
-  - echo hello world > foo
-  - mkdir bar baz
-  - echo hello world > bar/bar
-  - echo hello world > baz/baz
+  - sleep 2
+  - sleep 5
 
-artifacts:
-  - foo
-  - bar
-  - baz/
+timeout: 5s
+
+#artifacts:
+#  - foo
+#  - bar
+#  - baz/
