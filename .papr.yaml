@@ -1,0 +1,13 @@
+container:
+  image: registry.fedoraproject.org/fedora:27
+
+tests:
+  - echo hello world
+  - echo foobar > foobar
+  - mkdir baz
+  - echo baz > baz/zoo
+  - sleep 10
+
+artifacts:
+  - foobar
+  - baz/
